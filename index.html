@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rukshana | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top left, #93c5fd, transparent 40%),
+        radial-gradient(circle at bottom right, #60a5fa, transparent 40%),
+        linear-gradient(135deg, #0f172a, #020617);
+      color: #e5e7eb;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* ===== GLASS EFFECT ===== */
+    .glass {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(14px);
+      border-radius: 18px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+      border: 1px solid rgba(147,197,253,0.15);
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      text-align: center;
+      padding: 45px 20px;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      font-weight: 600;
+      background: linear-gradient(90deg, #93c5fd, #60a5fa, #2563eb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .header p {
+      margin-top: 12px;
+      font-size: 17px;
+      color: #c7d2fe;
+    }
+
+    /* ===== ABOUT ===== */
+    .about {
+      padding: 30px;
+      margin-bottom: 45px;
+    }
+
+    .about h2 {
+      margin-bottom: 15px;
+      color: #93c5fd;
+    }
+
+    .about p {
+      line-height: 1.8;
+      color: #e0e7ff;
+    }
+
+    /* ===== CARDS ===== */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-bottom: 45px;
+    }
+
+    .card {
+      padding: 28px;
+      border-radius: 22px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 35px 70px rgba(37,99,235,0.35);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 21px;
+      color: #eff6ff;
+    }
+
+    .card ul {
+      padding-left: 18px;
+    }
+
+    .card li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #dbeafe;
+    }
+
+    .blue {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    }
+
+    .orange {
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+    }
+
+    .green {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    }
+
+    /* ===== FOCUS ===== */
+    .focus {
+      padding: 35px 25px;
+    }
+
+    .focus h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #93c5fd;
+    }
+
+    .focus-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .focus-item {
+      padding: 18px;
+      border-radius: 14px;
+      background: rgba(30, 58, 138, 0.6);
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: #eff6ff;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(147,197,253,0.15);
+    }
+
+    .focus-item:hover {
+      transform: translateY(-6px);
+      background: rgba(37,99,235,0.85);
+      box-shadow: 0 18px 35px rgba(37,99,235,0.45);
+    }
+
+    footer {
+      margin-top: 45px;
+      text-align: center;
+      font-size: 13px;
+      color: #93c5fd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="header glass">
+      <h1>Rukshana</h1>
+      <p>HR Professional | Author | Startup Founder</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about glass">
+      <h2>About Me</h2>
+      <p>
+        HR professional with 2 years of experience in end-to-end HR operations.
+        Published author of <b>“Live Without Boundaries.”</b><br><br>
+        Founder of <b>DoNow</b>, helping non-tech founders validate and launch their MVPs.
+      </p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="cards">
+
+      <div class="card blue">
+        <h3>Experience</h3>
+        <ul>
+          <li>Human Resources (2 Years)</li>
+          <li>Recruitment & Onboarding</li>
+          <li>Employee Engagement</li>
+          <li>HR Compliance & Offboarding</li>
+        </ul>
+      </div>
+
+      <div class="card orange">
+        <h3>Author</h3>
+        <p><b>Published Author</b></p>
+        <p style="margin-top:10px; color:#dbeafe;">
+          <i>Live Without Boundaries</i><br>
+          Addressing everyday challenges & emotional growth.
+        </p>
+      </div>
+
+      <div class="card green">
+        <h3>Founder – DoNow</h3>
+        <ul>
+          <li>Startup for Non-Tech Founders</li>
+          <li>Problem Validation</li>
+          <li>First Clickable MVP Development</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- FOCUS -->
+    <div class="focus glass">
+      <h2>Focus Areas</h2>
+      <div class="focus-items">
+        <div class="focus-item">Core HR Operations</div>
+        <div class="focus-item">People & Process Optimization</div>
+        <div class="focus-item">Startup Validation</div>
+        <div class="focus-item">MVP Planning & Execution</div>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 Rukshana • Blue Edition 💙
+    </footer>
+
+  </div>
+
+</body>
+</html>
